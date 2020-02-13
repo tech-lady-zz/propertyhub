@@ -6,6 +6,8 @@ import FilterProperty from './FilterProperty';
 import Properties from './Properties';
 import ChooseUs from './ChooseUs';
 import Blog from './Blog';
+import Agent from './Agent';
+
 const Homepage = () => {
   return (
     <>
@@ -26,6 +28,7 @@ const Homepage = () => {
         <Properties/>
         <ChooseUs/>
         <Blog/>
+        <Agent/>
         <Footer />
       </div>
     </>
