@@ -2,6 +2,10 @@ import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import TrendingProperty from './TrendingProperty';
+import FilterProperty from './FilterProperty';
+import Properties from './Properties';
+import ChooseUs from './ChooseUs';
+import Blog from './Blog';
 const Homepage = () => {
   return (
     <>
@@ -18,6 +22,10 @@ const Homepage = () => {
         </div>
         <Header />
         <TrendingProperty/>
+        <FilterProperty/>
+        <Properties/>
+        <ChooseUs/>
+        <Blog/>
         <Footer />
       </div>
     </>
