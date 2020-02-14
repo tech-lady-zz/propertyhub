@@ -5,11 +5,11 @@ import image from '../../assets/images/img_4.jpg';
 
 const Blog = () => {
   return (
-    <div class='site-section bg-light'>
-      <div class='container'>
-        <div class='row justify-content-center mb-5'>
-          <div class='col-md-7 text-center'>
-            <div class='site-section-title'>
+    <div className='site-section bg-light'>
+      <div className='container'>
+        <div className='row justify-content-center mb-5'>
+          <div className='col-md-7 text-center'>
+            <div className='site-section-title'>
               <h2>Recent Blog</h2>
             </div>
             <p>
@@ -20,20 +20,20 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div class='row'>
+        <div className='row'>
           <div
-            class='col-md-6 col-lg-4 mb-5'
+            className='col-md-6 col-lg-4 mb-5'
             data-aos='fade-up'
             data-aos-delay='100'
           >
             <NavLink to='#'>
-            <img src={image} alt='blog' class='img-fluid' />
+            <img src={image} alt='blog' className='img-fluid' />
             </NavLink>
-            <div class='p-4 bg-white'>
-              <span class='d-block text-secondary small text-uppercase'>
+            <div className='p-4 bg-white'>
+              <span className='d-block text-secondary small text-uppercase'>
                 Jan 20th, 2019
               </span>
-              <h2 class='h5 text-black mb-3'>
+              <h2 className='h5 text-black mb-3'>
                 <NavLink to='#'>Art Gossip by Mike Charles</NavLink>
               </h2>
               <p>

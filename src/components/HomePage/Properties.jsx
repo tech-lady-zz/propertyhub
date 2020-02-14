@@ -96,47 +96,47 @@ const Properties = () => {
     }
   ];
   return (
-    <div class='site-section site-section-sm bg-light'>
-      <div class='container'>
-        <div class='row mb-5'>
+    <div className='site-section site-section-sm bg-light'>
+      <div className='container'>
+        <div className='row mb-5'>
           {properties.map(property => (
-            <div class='col-md-6 col-lg-4 mb-4'>
-              <div class='property-entry h-100'>
-                <NavLink to='/property-details' class='property-thumbnail'>
-                  <div class='offer-type-wrap'>
-                    {/* <span class="offer-type bg-danger">Sale</span> */}
-                    <span class='offer-type bg-success'>{property.option}</span>
+            <div className='col-md-6 col-lg-4 mb-4'>
+              <div className='property-entry h-100'>
+                <NavLink to='/property-details' className='property-thumbnail'>
+                  <div className='offer-type-wrap'>
+                    {/* <span className="offer-type bg-danger">Sale</span> */}
+                    <span className='offer-type bg-success'>{property.option}</span>
                   </div>
-                  <img src={property.image} alt='property' class='img-fluid' />
+                  <img src={property.image} alt='property' className='img-fluid' />
                 </NavLink>
-                <div class='p-4 property-body'>
-                  <NavLink to='#' class='property-favorite'>
-                    <span class='icon-heart-o'></span>
+                <div className='p-4 property-body'>
+                  <NavLink to='#' className='property-favorite'>
+                    <span className='icon-heart-o'></span>
                   </NavLink>
-                  <h2 class='property-title'>
+                  <h2 className='property-title'>
                     <NavLink to='/property-details'>{property.name}</NavLink>
                   </h2>
-                  <span class='property-location d-block mb-3'>
-                    <span class='property-icon icon-room'></span>{' '}
+                  <span className='property-location d-block mb-3'>
+                    <span className='property-icon icon-room'></span>{' '}
                     {property.address}
                   </span>
-                  <strong class='property-price text-primary mb-3 d-block text-success'>
+                  <strong className='property-price text-primary mb-3 d-block text-success'>
                     {property.amount}
                   </strong>
-                  <ul class='property-specs-wrap mb-3 mb-lg-0'>
+                  <ul className='property-specs-wrap mb-3 mb-lg-0'>
                     <li>
-                      <span class='property-specs'>Beds</span>
-                      <span class='property-specs-number'>
+                      <span className='property-specs'>Beds</span>
+                      <span className='property-specs-number'>
                         {property.bed} <sup>+</sup>
                       </span>
                     </li>
                     <li>
-                      <span class='property-specs'>Baths</span>
-                      <span class='property-specs-number'>{property.bath}</span>
+                      <span className='property-specs'>Baths</span>
+                      <span className='property-specs-number'>{property.bath}</span>
                     </li>
                     <li>
-                      <span class='property-specs'>SQ FT</span>
-                      <span class='property-specs-number'>
+                      <span className='property-specs'>SQ FT</span>
+                      <span className='property-specs-number'>
                         {property.sqMeter}
                       </span>
                     </li>
@@ -147,10 +147,10 @@ const Properties = () => {
           ))}
         </div>
       </div>
-      <div class='row'>
-        <div class='col-md-12 text-center'>
-          <div class='site-pagination'>
-            <NavLink to='#' class='active'>
+      <div className='row'>
+        <div className='col-md-12 text-center'>
+          <div className='site-pagination'>
+            <NavLink to='#' className='active'>
               1
             </NavLink>
             <NavLink to='#'>2</NavLink>

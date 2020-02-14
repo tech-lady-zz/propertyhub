@@ -4,11 +4,11 @@ import image from '../../assets/images/person_1.jpg';
 
 const Agent = () => {
   return (
-    <div class='site-section'>
-      <div class='container'>
-        <div class='row mb-5 justify-content-center'>
-          <div class='col-md-7'>
-            <div class='site-section-title text-center'>
+    <div className='site-section'>
+      <div className='container'>
+        <div className='row mb-5 justify-content-center'>
+          <div className='col-md-7'>
+            <div className='site-section-title text-center'>
               <h2>Our Agents</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
@@ -19,15 +19,15 @@ const Agent = () => {
             </div>
           </div>
         </div>
-        <div class='row'>
-          <div class='col-md-6 col-lg-4 mb-5 mb-lg-5'>
-            <div class='team-member'>
-              <img src={image} alt='person' class='img-fluid' />Ï
-              <div class='text'>
-                <h2 class='mb-2 font-weight-light text-black h4'>
+        <div className='row'>
+          <div className='col-md-6 col-lg-4 mb-5 mb-lg-5'>
+            <div className='team-member'>
+              <img src={image} alt='person' className='img-fluid' />Ï
+              <div className='text'>
+                <h2 className='mb-2 font-weight-light text-black h4'>
                   Megan Smith
                 </h2>
-                <span class='d-block mb-3 text-white-opacity-05'>
+                <span className='d-block mb-3 text-white-opacity-05'>
                   Real Estate Agent
                 </span>
                 <p>
@@ -37,14 +37,14 @@ const Agent = () => {
                   vitae minus obcaecati provident beatae!
                 </p>
                 <p>
-                  <NavLink to='#' class='text-black p-2'>
-                    <span class='icon-facebook'></span>
+                  <NavLink to='#' className='text-black p-2'>
+                    <span className='icon-facebook'></span>
                   </NavLink>
-                  <NavLink to='#' class='text-black p-2'>
-                    <span class='icon-twitter'></span>
+                  <NavLink to='#' className='text-black p-2'>
+                    <span className='icon-twitter'></span>
                   </NavLink>
-                  <NavLink to='#' class='text-black p-2'>
-                    <span class='icon-linkedin'></span>
+                  <NavLink to='#' className='text-black p-2'>
+                    <span className='icon-linkedin'></span>
                   </NavLink>
                 </p>
               </div>

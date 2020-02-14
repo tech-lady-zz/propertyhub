@@ -11,16 +11,16 @@ import Agent from './Agent';
 const Homepage = () => {
   return (
     <>
-      {/* <div class='site-loader'></div> */}
+      {/* <div className='site-loader'></div> */}
 
-      <div class='site-wrap'>
-        <div class='site-mobile-menu'>
-          <div class='site-mobile-menu-header'>
-            <div class='site-mobile-menu-close mt-3'>
-              <span class='icon-close2 js-menu-toggle'></span>
+      <div className='site-wrap'>
+        <div className='site-mobile-menu'>
+          <div className='site-mobile-menu-header'>
+            <div className='site-mobile-menu-close mt-3'>
+              <span className='icon-close2 js-menu-toggle'></span>
             </div>
           </div>
-          <div class='site-mobile-menu-body'></div>
+          <div className='site-mobile-menu-body'></div>
         </div>
         <Header />
         <TrendingProperty/>

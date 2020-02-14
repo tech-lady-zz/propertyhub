@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
-    <footer class='site-footer'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-lg-4'>
-            <div class='mb-5'>
-              <h3 class='footer-heading mb-4'>About Property Hub</h3>
+    <footer className='site-footer'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-4'>
+            <div className='mb-5'>
+              <h3 className='footer-heading mb-4'>About Property Hub</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
                 pariatur reprehenderit vero atque, consequatur id ratione, et
@@ -16,13 +16,13 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div class='col-lg-4 mb-5 mb-lg-0'>
-            <div class='row mb-5'>
-              <div class='col-md-12'>
-                <h3 class='footer-heading mb-4'>Navigations</h3>
+          <div className='col-lg-4 mb-5 mb-lg-0'>
+            <div className='row mb-5'>
+              <div className='col-md-12'>
+                <h3 className='footer-heading mb-4'>Navigations</h3>
               </div>
-              <div class='col-md-6 col-lg-6'>
-                <ul class='list-unstyled'>
+              <div className='col-md-6 col-lg-6'>
+                <ul className='list-unstyled'>
                   <li>
                     <NavLink to='/'>Home</NavLink>
                   </li>
@@ -37,8 +37,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div class='col-md-6 col-lg-6'>
-                <ul class='list-unstyled'>
+              <div className='col-md-6 col-lg-6'>
+                <ul className='list-unstyled'>
                   <li>
                     <NavLink to='/'>About Us</NavLink>
                   </li>
@@ -56,27 +56,27 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class='col-lg-4 mb-5 mb-lg-0'>
-            <h3 class='footer-heading mb-4'>Follow Us</h3>
+          <div className='col-lg-4 mb-5 mb-lg-0'>
+            <h3 className='footer-heading mb-4'>Follow Us</h3>
 
             <div>
-              <NavLink to='/' class='pl-0 pr-3'>
-                <span class='icon-facebook'></span>
+              <NavLink to='/' className='pl-0 pr-3'>
+                <span className='icon-facebook'></span>
               </NavLink>
-              <NavLink to='/' class='pl-3 pr-3'>
-                <span class='icon-twitter'></span>
+              <NavLink to='/' className='pl-3 pr-3'>
+                <span className='icon-twitter'></span>
               </NavLink>
-              <NavLink to='/' class='pl-3 pr-3'>
-                <span class='icon-instagram'></span>
+              <NavLink to='/' className='pl-3 pr-3'>
+                <span className='icon-instagram'></span>
               </NavLink>
-              <NavLink to='/' class='pl-3 pr-3'>
-                <span class='icon-linkedin'></span>
+              <NavLink to='/' className='pl-3 pr-3'>
+                <span className='icon-linkedin'></span>
               </NavLink>
             </div>
           </div>
         </div>
-        <div class='row pt-5 mt-5 text-center'>
-          <div class='col-md-12'>
+        <div className='row pt-5 mt-5 text-center'>
+          <div className='col-md-12'>
             <p>
               Copyright &copy;
               <script
@@ -85,7 +85,7 @@ const Footer = () => {
               ></script>
               <script>document.write(new Date().getFullYear());</script> All
               rights reserved
-              <i class='icon-heart text-danger' aria-hidden='true'></i> by{' '}
+              <i className='icon-heart text-danger' aria-hidden='true'></i> by{' '}
               <NavLink to='/' target='_blank'>
                 Property Hub
               </NavLink>

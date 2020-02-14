@@ -2,11 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 const ChooseUs = () => {
   return (
-    <div class='site-section'>
-      <div class='container'>
-        <div class='row justify-content-center'>
-          <div class='col-md-7 text-center'>
-            <div class='site-section-title'>
+    <div className='site-section'>
+      <div className='container'>
+        <div className='row justify-content-center'>
+          <div className='col-md-7 text-center'>
+            <div className='site-section-title'>
               <h2>Why Choose Us?</h2>
             </div>
             <p>
@@ -18,17 +18,17 @@ const ChooseUs = () => {
           </div>
         </div>
 
-        <div class='row'>
-          <div class='col-md-6 col-lg-4'>
-            <NavLink to='#' class='service text-center'>
-              <span class='icon flaticon-house'></span>
-              <h2 class='service-heading'>Research Subburbs</h2>
+        <div className='row'>
+          <div className='col-md-6 col-lg-4'>
+            <NavLink to='#' className='service text-center'>
+              <span className='icon flaticon-house'></span>
+              <h2 className='service-heading'>Research Subburbs</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt iure qui natus perspiciatis ex odio molestia.
               </p>
               <p>
-                <span class='read-more'>Read More</span>
+                <span className='read-more'>Read More</span>
               </p>
             </NavLink>
           </div>
