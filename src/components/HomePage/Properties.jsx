@@ -1,100 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import image from '../../assets/images/img_1.jpg';
+import { connect } from 'react-redux';
+import  {getAllProperties} from '../../redux/actions/PropertyAction';
 
-const Properties = () => {
-  const properties = [
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    },
-    {
-      option: 'Rent',
-      image,
-      name: '625 S. Berendo St',
-      address: '625 S. Berendo St Unit 607 Los Angeles, CA 90005',
-      amount: '$2,265,500',
-      bed: '2',
-      bath: '2',
-      sqMeter: '7,000'
-    }
-  ];
+const Properties = ({ getAllProperties, properties }) => {
+  useEffect(() => {
+    getAllProperties();
+  }, []);
+
   return (
     <div className='site-section site-section-sm bg-light'>
       <div className='container'>
@@ -105,9 +18,15 @@ const Properties = () => {
                 <NavLink to='/property-details' className='property-thumbnail'>
                   <div className='offer-type-wrap'>
                     {/* <span className="offer-type bg-danger">Sale</span> */}
-                    <span className='offer-type bg-success'>{property.option}</span>
+                    <span className='offer-type bg-success'>
+                      {property.option}
+                    </span>
                   </div>
-                  <img src={property.image} alt='property' className='img-fluid' />
+                  <img
+                    src={property.image}
+                    alt='property'
+                    className='img-fluid'
+                  />
                 </NavLink>
                 <div className='p-4 property-body'>
                   <NavLink to='#' className='property-favorite'>
@@ -132,7 +51,9 @@ const Properties = () => {
                     </li>
                     <li>
                       <span className='property-specs'>Baths</span>
-                      <span className='property-specs-number'>{property.bath}</span>
+                      <span className='property-specs-number'>
+                        {property.bath}
+                      </span>
                     </li>
                     <li>
                       <span className='property-specs'>SQ FT</span>
@@ -165,5 +86,7 @@ const Properties = () => {
     </div>
   );
 };
-
-export default Properties;
+const mapStatesToProps = state => ({
+  properties: state.Properties
+});
+export default connect(mapStatesToProps, { getAllProperties })(Properties);
