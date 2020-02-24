@@ -1,15 +1,16 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
-export default function Homepage() {
+export default function Home() {
+
   return (
     <div>
       <Navbar />
-      <Carousel>
+      <Carousel className="carousel-fade">
         <Carousel.Item>
-          <div className="site-blocks-cover overlay" style={{backgroundImage: `url(images/hero_bg_1.jpg)`}} data-aos="fade" data-stellar-background-ratio="0.5">
+          <div className="site-blocks-cover overlay" style={{backgroundImage: `url(images/hero_bg_1.jpg)`}} data-stellar-background-ratio="0.5">
             <div className="container">
               <div className="row align-items-center justify-content-center text-center">
                 <div className="col-md-10">
@@ -23,7 +24,7 @@ export default function Homepage() {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div class="site-blocks-cover overlay" style={{backgroundImage: `url(images/hero_bg_2.jpg)`}} data-aos="fade" data-stellar-background-ratio="0.5">
+          <div class="site-blocks-cover overlay" style={{backgroundImage: `url(images/hero_bg_2.jpg)`}} data-stellar-background-ratio="0.5">
             <div class="container">
               <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
@@ -37,7 +38,7 @@ export default function Homepage() {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="site-blocks-cover overlay" style={{backgroundImage: `url(images/hero_bg_3.jpg)`}} data-aos="fade" data-stellar-background-ratio="0.5">
+          <div className="site-blocks-cover overlay" style={{backgroundImage: `url(images/hero_bg_3.jpg)`}} data-stellar-background-ratio="0.5">
             <div className="container">
               <div className="row align-items-center justify-content-center text-center">
                 <div className="col-md-10">
@@ -49,11 +50,8 @@ export default function Homepage() {
               </div>
             </div>
           </div>
-        </Carousel.Item>
-        
+        </Carousel.Item> 
       </Carousel>       
-
-      
 
       <div className="site-section site-section-sm pb-0">
         <div className="container">
