@@ -63,6 +63,18 @@ a {
       opacity: 1;
       visibility: visible; }
 
+#first-carousel {
+  background-image: url("https://res.cloudinary.com/daktari/image/upload/v1583219815/propertyhub/hero_bg_1_npg0vu.jpg");
+}
+
+#second-carousel {
+  background-image: url("https://res.cloudinary.com/daktari/image/upload/v1583219815/propertyhub/hero_bg_2_tlyklh.jpg");
+}
+
+#third-carousel {
+  background-image: url("https://res.cloudinary.com/daktari/image/upload/v1583219815/propertyhub/hero_bg_3_s3ixu8.jpg");
+}
+
 .btn {
   position: relative;
   top: 0; }
