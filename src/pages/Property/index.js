@@ -14,6 +14,7 @@ export default function Property({address, baths, beds, image_url, name, price, 
         <div className="p-4 property-body">
           <a href="#" className="property-favorite"><span className="icon-heart-o"></span></a>
           <h2 className="property-title"><a href="property-details.html">{name}</a></h2>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
           <span className="property-location d-block mb-3"><span className="property-icon icon-room"></span>{address}</span>
           <strong className="property-price text-primary mb-3 d-block text-success">{price}</strong>
           <ul className="property-specs-wrap mb-3 mb-lg-0">

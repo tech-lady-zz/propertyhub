@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import Property from '../Property'
+import React, { useEffect } from 'react';
+import { bindActionCreators } from 'redux'
+import { useSelector, connect } from 'react-redux';
 
-function Properties() {
-  const [properties, setProperties] = useState([]);
-  const [error, setErrors] = useState({});
+import Property from '../Property'
+import { getPropertiesAction } from './action';
+
+
+function Properties({ getProperties }) {
+  const {properties} = useSelector(state => state);
 
   useEffect(() => {
-    fetchProperties();
-  }, []);
+    getProperties();
+  }, [getProperties]);
 
-  const fetchProperties = async () => {
-    const API_URL = "http://localhost:5050/properties"
-    const response = await fetch(API_URL)
-    const data = await response.json();
-    setProperties(data);
-  }
+  console.log({properties})
   return (
     <div>
        <div className="row mb-5">
          {/* properties.map then render single property */}
-         {properties.map(property => (
+         {properties && properties.payload.map(property => (
            <Property
             key={property.id}
             address={property.address}
@@ -51,4 +50,8 @@ function Properties() {
   )
 }
 
-export default Properties;
+const mapDispatchToProps = dispatch => bindActionCreators(
+  { getProperties: getPropertiesAction }, dispatch
+);
+
+export default connect(null, mapDispatchToProps)(Properties);
