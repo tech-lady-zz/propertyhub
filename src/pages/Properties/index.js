@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react';
-import { bindActionCreators } from 'redux'
-import { useSelector, connect } from 'react-redux';
+import React, { useEffect, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Property from '../Property'
 import { getPropertiesAction } from './action';
 
 
-function Properties({ getProperties }) {
+function Properties() {
   const {properties} = useSelector(state => state);
 
+  const dispatch = useDispatch();
+  const stableDispatch = useCallback(dispatch, []);
+
   useEffect(() => {
-    getProperties();
-  }, [getProperties]);
+    stableDispatch(getPropertiesAction());
+  }, [stableDispatch]);
 
   console.log({properties})
   return (
@@ -50,8 +52,4 @@ function Properties({ getProperties }) {
   )
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators(
-  { getProperties: getPropertiesAction }, dispatch
-);
-
-export default connect(null, mapDispatchToProps)(Properties);
+export default Properties;
